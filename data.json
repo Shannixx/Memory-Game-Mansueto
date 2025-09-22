@@ -1,0 +1,248 @@
+{
+  "gameConfig": {
+    "maxCards": 48,
+    "minCards": 2,
+    "defaultCards": 6,
+    "gridColumns": "auto-fit",
+    "flipDuration": 600,
+    "matchDelay": 1000,
+    "scoreMultiplier": 10,
+    "timeBonus": 5,
+    "stackOperations": {
+      "pushAnimation": 300,
+      "popAnimation": 300,
+      "maxStackSize": 24
+    }
+  },
+  "cardData": [
+    {
+      "id": 1,
+      "name": "pixel-heart",
+      "icon": "❤️",
+      "color": "#E91E63",
+      "points": 10,
+      "rarity": "common"
+    },
+    {
+      "id": 2,
+      "name": "pixel-star",
+      "icon": "⭐",
+      "color": "#FFD700",
+      "points": 10,
+      "rarity": "common"
+    },
+    {
+      "id": 3,
+      "name": "pixel-diamond",
+      "icon": "💎",
+      "color": "#00BCD4",
+      "points": 15,
+      "rarity": "rare"
+    },
+    {
+      "id": 4,
+      "name": "pixel-crown",
+      "icon": "👑",
+      "color": "#FF9800",
+      "points": 15,
+      "rarity": "rare"
+    },
+    {
+      "id": 5,
+      "name": "pixel-gem",
+      "icon": "💠",
+      "color": "#9C27B0",
+      "points": 12,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 6,
+      "name": "pixel-fire",
+      "icon": "🔥",
+      "color": "#FF5722",
+      "points": 12,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 7,
+      "name": "pixel-lightning",
+      "icon": "⚡",
+      "color": "#FFC107",
+      "points": 12,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 8,
+      "name": "pixel-coin",
+      "icon": "💰",
+      "color": "#FF8F00",
+      "points": 10,
+      "rarity": "common"
+    },
+    {
+      "id": 9,
+      "name": "pixel-shield",
+      "icon": "🛡️",
+      "color": "#607D8B",
+      "points": 15,
+      "rarity": "rare"
+    },
+    {
+      "id": 10,
+      "name": "pixel-sword",
+      "icon": "⚔️",
+      "color": "#795548",
+      "points": 15,
+      "rarity": "rare"
+    },
+    {
+      "id": 11,
+      "name": "pixel-magic",
+      "icon": "✨",
+      "color": "#E1BEE7",
+      "points": 12,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 12,
+      "name": "pixel-rocket",
+      "icon": "🚀",
+      "color": "#2196F3",
+      "points": 20,
+      "rarity": "legendary"
+    },
+    {
+      "id": 13,
+      "name": "pixel-crystal",
+      "icon": "🔮",
+      "color": "#673AB7",
+      "points": 18,
+      "rarity": "epic"
+    },
+    {
+      "id": 14,
+      "name": "pixel-treasure",
+      "icon": "💰",
+      "color": "#4CAF50",
+      "points": 16,
+      "rarity": "rare"
+    },
+    {
+      "id": 15,
+      "name": "pixel-potion",
+      "icon": "🧪",
+      "color": "#E91E63",
+      "points": 14,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 16,
+      "name": "pixel-key",
+      "icon": "🗝️",
+      "color": "#FF9800",
+      "points": 13,
+      "rarity": "uncommon"
+    },
+    {
+      "id": 17,
+      "name": "pixel-scroll",
+      "icon": "📜",
+      "color": "#8BC34A",
+      "points": 11,
+      "rarity": "common"
+    },
+    {
+      "id": 18,
+      "name": "pixel-bomb",
+      "icon": "💣",
+      "color": "#F44336",
+      "points": 17,
+      "rarity": "epic"
+    },
+    {
+      "id": 19,
+      "name": "pixel-hourglass",
+      "icon": "⏳",
+      "color": "#795548",
+      "points": 15,
+      "rarity": "rare"
+    },
+    {
+      "id": 20,
+      "name": "pixel-phoenix",
+      "icon": "🦅",
+      "color": "#FF5722",
+      "points": 25,
+      "rarity": "legendary"
+    },
+    {
+      "id": 21,
+      "name": "pixel-unicorn",
+      "icon": "🦄",
+      "color": "#E91E63",
+      "points": 22,
+      "rarity": "legendary"
+    },
+    {
+      "id": 22,
+      "name": "pixel-dragon",
+      "icon": "🐉",
+      "color": "#4CAF50",
+      "points": 30,
+      "rarity": "mythic"
+    },
+    {
+      "id": 23,
+      "name": "pixel-wizard",
+      "icon": "🧙‍♂️",
+      "color": "#673AB7",
+      "points": 20,
+      "rarity": "legendary"
+    },
+    {
+      "id": 24,
+      "name": "pixel-galaxy",
+      "icon": "🌌",
+      "color": "#3F51B5",
+      "points": 35,
+      "rarity": "mythic"
+    }
+  ],
+  "playerSettings": {
+    "defaultName": "StackMaster",
+    "maxNameLength": 20,
+    "soundEnabled": true,
+    "animationsEnabled": true,
+    "stackVisualization": true
+  },
+  "stackInstructions": [
+    "🔄 PUSH: Adds a new card pair to the game stack (LIFO)",
+    "🔄 POP: Removes the top card pair from the game stack",
+    "👁️ PEEK: View the top card in the stack without removing it",
+    "🗑️ CLEAR: Removes all cards from the stack",
+    "🎯 Minimum 2 pairs needed to start the game"
+  ],
+  "achievements": [
+    {
+      "id": "stack_master",
+      "name": "Stack Master",
+      "description": "Use 20+ cards in a single game",
+      "icon": "🏗️",
+      "reward": 200
+    },
+    {
+      "id": "minimalist",
+      "name": "Minimalist",
+      "description": "Complete game with only 4 cards",
+      "icon": "🎯",
+      "reward": 300
+    },
+    {
+      "id": "stack_operations",
+      "name": "Stack Operations Expert",
+      "description": "Use all stack operations in one session",
+      "icon": "💾",
+      "reward": 150
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - Stack Operations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header Section -->
+        <header class="game-header">
+            <h1 class="game-title">🎮 STACK MEMORY QUEST 🎮</h1>
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-label">SCORE:</span>
+                    <span id="current-score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">HIGH SCORE:</span>
+                    <span id="high-score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">MOVES:</span>
+                    <span id="moves">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">TIME:</span>
+                    <span id="timer">00:00</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stack Operations Panel -->
+        <div class="stack-operations-panel">
+            <div class="stack-info">
+                <h3>🏗️ STACK OPERATIONS</h3>
+                <div class="stack-display">
+                    <span class="stack-label">Cards in Stack:</span>
+                    <span id="stack-size">0</span>
+                    <span class="stack-label">| Total Pairs:</span>
+                    <span id="total-pairs">0</span>
+                </div>
+            </div>
+            <div class="stack-buttons">
+                <button id="push-card-btn" class="pixel-btn push-btn">PUSH CARD</button>
+                <button id="pop-card-btn" class="pixel-btn pop-btn">POP CARD</button>
+                <button id="peek-stack-btn" class="pixel-btn peek-btn">PEEK STACK</button>
+                <button id="clear-stack-btn" class="pixel-btn clear-btn">CLEAR STACK</button>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button id="start-btn" class="pixel-btn start-btn">START GAME</button>
+            <button id="reset-btn" class="pixel-btn reset-btn">RESET</button>
+            <button id="pause-btn" class="pixel-btn pause-btn">PAUSE</button>
+            <button id="logout-btn" class="pixel-btn logout-btn">LOGOUT</button>
+        </div>
+
+        <!-- Stack Visualization -->
+        <div class="stack-visualization">
+            <h4>📚 CARD STACK (LIFO)</h4>
+            <div id="stack-display" class="stack-cards">
+                <div class="stack-placeholder">Stack is empty - Push some cards!</div>
+            </div>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board" id="game-board">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+
+        <!-- Game Status -->
+        <div class="game-status">
+            <div id="game-message">Use PUSH/POP buttons to add/remove cards, then START GAME!</div>
+        </div>
+    </div>
+
+    <!-- Card Selection Modal -->
+    <div id="card-selection-modal" class="modal">
+        <div class="modal-content">
+            <h2>🎯 SELECT CARD TO PUSH</h2>
+            <div class="available-cards" id="available-cards">
+                <!-- Available cards will be shown here -->
+            </div>
+            <button id="cancel-selection-btn" class="pixel-btn">CANCEL</button>
+        </div>
+    </div>
+
+    <!-- Stack Peek Modal -->
+    <div id="stack-peek-modal" class="modal">
+        <div class="modal-content">
+            <h2>👀 STACK TOP CARD</h2>
+            <div id="peek-card-display" class="peek-display">
+                <!-- Top card will be shown here -->
+            </div>
+            <button id="close-peek-btn" class="pixel-btn">CLOSE</button>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>🎉 GAME COMPLETE! 🎉</h2>
+            <div class="final-stats">
+                <p>Final Score: <span id="final-score"></span></p>
+                <p>Total Moves: <span id="final-moves"></span></p>
+                <p>Time Taken: <span id="final-time"></span></p>
+                <p>Cards Used: <span id="final-cards"></span></p>
+                <p id="new-record" style="display: none;">🏆 NEW HIGH SCORE! 🏆</p>
+            </div>
+            <div class="modal-buttons">
+                <button id="play-again-btn" class="pixel-btn">PLAY AGAIN</button>
+                <button id="close-modal-btn" class="pixel-btn">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>👾 ENTER PLAYER NAME 👾</h2>
+            <input type="text" id="player-name" placeholder="Enter your name..." maxlength="20">
+            <button id="save-name-btn" class="pixel-btn">START ADVENTURE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
